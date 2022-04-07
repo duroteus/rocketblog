@@ -1,0 +1,78 @@
+#header {
+  background: var(--purple-bg);
+  padding: 2rem;
+  border-bottom: 6px solid var(--green);
+}
+
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+#header nav img {
+  width: 10rem;
+}
+
+#header .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+}
+
+#header .icon {
+  height: 100%;
+  width: 2.25rem;
+  
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .icon-search {
+  background: var(--button-bg-t);
+  opacity: 0.7;
+  color: var(--white);
+
+  border-radius: 4px;
+}
+
+#header .icon-menu {
+  color: var(--button-bg);
+}
+
+#header .mainHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#header .mainHeader h1 {
+  font: 700 2.25rem var(--title-font);
+  color: var(--button-bg);
+}
+
+#header .mainHeader p {
+  font: 400 1.125rem var(--body-font);
+  color: var(--white);
+  display: flex;
+}
+
+#header .mainHeader a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  font: 700 1.125rem var(--body-font);
+  color: var(--button-bg);
+}
+
+#header .mainHeader img {
+  width: 1.5rem;
+}
+
+#header .mainHeader div {
+  margin-bottom: 3.25rem;
+}

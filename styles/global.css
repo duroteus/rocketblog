@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2 {
+  font: 700 1.5rem var(--body-font);
+  color: var(--purple-bg);
+}
+
+:root {
+
+  /* colors */
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --button-bg-t: #9f6dc264;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+
+  /* fonts */
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
