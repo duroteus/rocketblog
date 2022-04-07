@@ -1,7 +1,6 @@
 #main {
   background: var(--light-purple);
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 2rem 2rem 4rem;
 }
 
 #main h2 {
