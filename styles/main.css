@@ -63,3 +63,16 @@
   margin-top: 1rem;
   bottom: auto;
 }
+
+@media screen and (min-width: 1024px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main .top-posts {
+    flex-direction: row;
+    width: 73.125rem;
+  }
+}

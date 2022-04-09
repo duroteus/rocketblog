@@ -29,33 +29,47 @@
     />
   </head>
   <body>
-    <header id="header">
-      <nav>
+    <header id="header" class="container">
+      <nav class="">
         <img src="assets/images/logo.svg" alt="" />
+        <div class="menu">
+          <ul>
+            <li><a class="title" href="#home">Home</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#categories">Categorias</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
         <div class="icons">
           <div class="icon icon-search"></div>
-          <div class="icon icon-menu"></div>
+          <div class="icon toggle icon-menu"></div>
+          <div class="icon toggle icon-close"></div>
         </div>
       </nav>
 
-      <section class="mainHeader">
-        <h1>
-          Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
-        </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          cum nulla non, consequatur, labore saepe voluptatum aspernatur odio
-          adipisci amet in earum dolore praesentium iste sequi, illum itaque
-          nisi corrupti.
-        </p>
-        <div>
-          <a href=""
-            >Veja mais <img src="assets/images/arrow-right.svg" alt=""
-          /></a>
+      <section>
+        <div class="mainHeader">
+          <h1 class="title">
+            Veja o guia definitivo para conquistar seus objetivos como DEV em
+            2022
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus cum nulla non, consequatur, labore saepe voluptatum
+            aspernatur odio adipisci amet in earum dolore praesentium iste
+            sequi, illum itaque nisi corrupti.
+          </p>
+          <div>
+            <a href=""
+              >Veja mais <img src="assets/images/arrow-right.svg" alt=""
+            /></a>
+          </div>
         </div>
+        <img class="showImg" src="assets/images/featured-image.png" alt="" />
       </section>
     </header>
-    <main id="main">
+
+    <main id="main" class="container">
       <div class="top-posts">
         <div class="main-post">
           <img src="assets/images/post-1.png" alt="" />
@@ -72,7 +86,7 @@
           <div class="side-post">
             <p>Janeiro 04, 2022</p>
             <a href="">
-              <h2>
+              <h2 class="title">
                 Conheça as principais técnicas para conseguir uma vaga
                 internacional em programação
               </h2>
@@ -85,7 +99,7 @@
           <div class="side-post">
             <p>Janeiro 04, 2022</p>
             <a href="">
-              <h2>Veja a evolução do Front-end na prática</h2>
+              <h2 class="title">Veja a evolução do Front-end na prática</h2>
             </a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -100,7 +114,7 @@
             <img src="assets/images/post-2.png" alt="" />
             <p>Janeiro 04, 2022</p>
             <a href="">
-              <h2>10 dicas para conseguir a vaga desejada</h2>
+              <h2 class="title">10 dicas para conseguir a vaga desejada</h2>
             </a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -111,7 +125,9 @@
             <img src="assets/images/post-3.png" alt="" />
             <p>Janeiro 04, 2022</p>
             <a href="">
-              <h2>Deixe seu código mais semântico com essas dicas</h2>
+              <h2 class="title">
+                Deixe seu código mais semântico com essas dicas
+              </h2>
             </a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -122,7 +138,7 @@
             <img src="assets/images/post-4.png" alt="" />
             <p>Janeiro 04, 2022</p>
             <a href="">
-              <h2>Use essas dicas nas suas aplicações mobile</h2>
+              <h2 class="title">Use essas dicas nas suas aplicações mobile</h2>
             </a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga

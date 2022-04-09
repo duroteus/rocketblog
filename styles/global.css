@@ -17,9 +17,17 @@ img {
   height: auto;
 }
 
-h1, h2 {
-  font: 700 1.5rem var(--body-font);
+.title {
+  font: 700 1rem var(--body-font);
   color: var(--purple-bg);
+}
+
+h1.title {
+  font-size: 2.25rem;
+}
+
+h2.title {
+  font-size: 1.5rem;
 }
 
 :root {
@@ -36,4 +44,10 @@ h1, h2 {
   /* fonts */
   --title-font: 'Poppins', sans-serif;
   --body-font: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    width: 300px;
+  }
 }

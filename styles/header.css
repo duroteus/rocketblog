@@ -14,6 +14,17 @@
   width: 10rem;
 }
 
+#header nav .menu {
+  opacity: 0;
+  visibility: hidden;
+
+  position: absolute;
+  z-index: -1;
+  top: -20rem;
+
+  transition: 0.2s;
+}
+
 #header .icons {
   display: flex;
   align-items: center;
@@ -23,10 +34,10 @@
 }
 
 #header .icon {
-  height: 100%;
+  height: 2.25rem;
   width: 2.25rem;
   
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -39,9 +50,89 @@
   border-radius: 4px;
 }
 
-#header .icon-menu {
+#header .toggle {
   color: var(--button-bg);
 }
+
+/* ---- MENU MOBILE ATIVO ---- */
+
+#header nav.show ul {
+  display: grid;
+  gap: 4rem;  
+}
+
+#header nav.show .menu {
+  display: grid;
+  place-content: center;
+
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--purple-bg);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+#header nav ul li {
+  text-align: center;
+}
+
+#header nav ul li a {
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+#header nav ul li a:hover {
+  color: var(--button-bg);
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--green);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#header nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  right: 2.25rem;
+  top: -1.5rem;
+  z-index: -1;
+
+  transition: 0.2s;
+}
+
+#header nav.show .icon-close {
+  visibility: visible;
+  opacity: 1;
+
+  position: absolute;
+  top: 2rem;
+  z-index: 11;
+}
+
+/* ---- CONTEÚDO PRINCIPAL ---- */
 
 #header .mainHeader {
   display: flex;
@@ -75,4 +166,57 @@
 
 #header .mainHeader div {
   margin-bottom: 3.25rem;
+}
+
+#header .showImg {
+  width: 1px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header nav {
+    margin-bottom: 4rem;
+    width: 73.125rem;
+  }
+
+  #header nav .menu {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 0;
+    top: auto;
+  }
+
+  #header nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #header .showImg {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    z-index: 0;
+    width: 36.6rem;
+  }
+
+  #header section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 73.125rem;
+  }
+
+  #header .mainHeader {
+    width: 35.62rem;
+  }
 }
