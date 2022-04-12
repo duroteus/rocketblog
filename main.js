@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
 
   breakpoints: {
-    413: {
+    412: {
       slidesPerView: 3,
       autoplay: false,
       spaceBetween: 30
