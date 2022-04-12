@@ -1,3 +1,5 @@
+/* Alterna o botão de menu e sair */
+
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -7,6 +9,8 @@ for (const element of toggle) {
   })
 }
 
+/* Sai do menu ao clicar em algum link */
+
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -15,10 +19,20 @@ for (const link of links) {
   })
 }
 
+/* Swiper */
+
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets'
+  autoplay: {
+    delay: 2500
+  },
+  loop: true,
+
+  breakpoints: {
+    413: {
+      slidesPerView: 3,
+      autoplay: false,
+      spaceBetween: 30
+    }
   }
 })

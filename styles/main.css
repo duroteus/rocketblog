@@ -45,23 +45,7 @@
 }
 
 #main .bottom-post p {
-  visibility: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-#main .swiper-pagination-bullet {
-  width: 0.5rem;
-  height: 0.5rem;
-}
-
-#main .swiper-pagination-bullet-active {
-  background: var(--button-bg);
-}
-
-#main .swiper-pagination-bullets.swiper-pagination-horizontal {
-  margin-top: 1rem;
-  bottom: auto;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -74,5 +58,13 @@
   #main .top-posts {
     flex-direction: row;
     width: 73.125rem;
+  }
+
+  #main .bottom-posts {
+    width: 73.125rem;
+  }
+
+  #main .bottom-post p {
+    display: block;
   }
 }
